@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E1E0DC">
+
+
+    <TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabhost"
+
+        >
+        <TabWidget
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs"
+            android:background="#009688"
+            >
+
+        </TabWidget>
+
+        <!-- android:layout_height="fill_parent"-->
+        <FrameLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@android:id/tabcontent"
+
+            >
+            <!-- CONTROLES DEL PRIMER TAB -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="200px"
+                android:id="@+id/tab1"
+                >
+
+
+                <ListView
+                    android:
+                    android:id="@+id/lv1"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="550dp"></ListView>
+
+                <Button
+                    android:id="@+id/buttonGastos"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="Agregar Gasto"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+            <!-- CONTROLES DEL SEGUNDO TAB -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="200px"
+                android:id="@+id/tab2"
+                >
+
+                <ListView
+                    android:id="@+id/lv2"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="550dp"></ListView>
+
+                <Button
+                    android:id="@+id/buttonIngresos"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="Agregar Ingreso"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+            <!-- CONTROLES DEL TERCER TAB -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="200px"
+                android:id="@+id/tab3"
+                >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="AQUI VA EL GRAFICO DE BARRAS"
+                    android:background="#2196F3" />
+            </LinearLayout>
+        </FrameLayout>
+    </TabHost>
+</ScrollView>
